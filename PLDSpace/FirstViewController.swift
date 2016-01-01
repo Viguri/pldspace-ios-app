@@ -29,8 +29,6 @@ class FirstViewController: UIViewController {
         let myURLRequest : NSURLRequest = NSURLRequest(URL: myURL);
         self.webViewYoutubeIntro.loadRequest(myURLRequest)
         
-
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +36,15 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    class PLD_presentation1 : UILabel {
+        override func layoutSubviews() {
+        // 1. Get the label to set its frame correctly:
+        super.layoutSubviews()
+        
+        // 2. Now the frame is set we can get the correct width
+        // and set it to the preferredMaxLayoutWidth.
+        self.preferredMaxLayoutWidth = self.frame.width
+    }
     /*para recuperar el color original al salir de la vista
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
@@ -50,3 +57,4 @@ class FirstViewController: UIViewController {
 
 }
 
+}
