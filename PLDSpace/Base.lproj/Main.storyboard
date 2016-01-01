@@ -3,6 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Arion 1-->
@@ -16,7 +19,7 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Arion 1" image="first" selectedImage="first" id="acW-dT-cKf"/>
                 </viewController>
@@ -35,7 +38,7 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.51534796099290781" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Arion 2" image="second" id="cPa-gy-q4n"/>
                 </viewController>
@@ -54,13 +57,72 @@
                     <view key="view" contentMode="scaleToFill" id="SOv-x5-we5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PLD_Logo_black" translatesAutoresizingMaskIntoConstraints="NO" id="ODp-ur-93U">
+                                <rect key="frame" x="180" y="18.5" width="240" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="c0N-HX-U1I"/>
+                                    <constraint firstAttribute="width" secondItem="ODp-ur-93U" secondAttribute="height" multiplier="240:43" id="lMw-qn-ZZp"/>
+                                    <constraint firstAttribute="height" constant="45" id="nKK-uu-2Q1"/>
+                                    <constraint firstAttribute="width" secondItem="ODp-ur-93U" secondAttribute="height" multiplier="240:43" id="nsO-MO-B1Z"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lMw-qn-ZZp"/>
+                                        <exclude reference="nsO-MO-B1Z"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xot-Rb-4DF">
+                                <rect key="frame" x="180" y="71" width="240" height="151"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xot-Rb-4DF" secondAttribute="height" multiplier="240:151" id="3Up-jw-Pny"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="HUC-5t-xGe"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.49288009751773049" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ODp-ur-93U" firstAttribute="centerY" secondItem="SOv-x5-we5" secondAttribute="centerY" constant="-310" id="162-nJ-3zO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xot-Rb-4DF" secondAttribute="trailing" constant="20" id="4Sc-3U-rpi"/>
+                            <constraint firstItem="xot-Rb-4DF" firstAttribute="centerY" secondItem="SOv-x5-we5" secondAttribute="centerY" constant="-153.5" id="5Yd-gk-V7p"/>
+                            <constraint firstItem="xot-Rb-4DF" firstAttribute="top" secondItem="ODp-ur-93U" secondAttribute="bottom" constant="10" id="5y4-Dh-793"/>
+                            <constraint firstItem="xot-Rb-4DF" firstAttribute="leading" secondItem="SOv-x5-we5" secondAttribute="leadingMargin" constant="10" id="8NS-xq-yhy"/>
+                            <constraint firstItem="xot-Rb-4DF" firstAttribute="centerX" secondItem="SOv-x5-we5" secondAttribute="centerX" id="GDi-Sj-Q5t"/>
+                            <constraint firstItem="ODp-ur-93U" firstAttribute="centerY" secondItem="SOv-x5-we5" secondAttribute="centerY" constant="-258.5" id="P7q-Ft-UFL"/>
+                            <constraint firstItem="xot-Rb-4DF" firstAttribute="leading" secondItem="SOv-x5-we5" secondAttribute="leadingMargin" constant="20" id="YIj-2U-C8K"/>
+                            <constraint firstItem="ODp-ur-93U" firstAttribute="centerX" secondItem="SOv-x5-we5" secondAttribute="centerX" id="ZgU-4Y-XMb"/>
+                            <constraint firstItem="xot-Rb-4DF" firstAttribute="top" secondItem="ODp-ur-93U" secondAttribute="bottom" multiplier="4:3" constant="10" id="b8w-3G-zS8"/>
+                            <constraint firstItem="xot-Rb-4DF" firstAttribute="top" relation="lessThanOrEqual" secondItem="ODp-ur-93U" secondAttribute="bottom" constant="60" id="f8D-Vf-aFk"/>
+                            <constraint firstItem="xot-Rb-4DF" firstAttribute="centerX" secondItem="SOv-x5-we5" secondAttribute="centerX" id="fG3-Z8-I80"/>
+                            <constraint firstItem="ODp-ur-93U" firstAttribute="top" secondItem="SOv-x5-we5" secondAttribute="topMargin" constant="30" id="l00-sc-hio"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xot-Rb-4DF" secondAttribute="trailing" multiplier="4:3" constant="10" id="oOT-Bn-T8n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xot-Rb-4DF" secondAttribute="trailing" constant="160" id="pnz-fz-TlQ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="xot-Rb-4DF" secondAttribute="bottom" constant="395" id="q6z-tB-kZ8"/>
+                            <constraint firstItem="xot-Rb-4DF" firstAttribute="leading" secondItem="SOv-x5-we5" secondAttribute="leadingMargin" constant="160" id="umf-jt-z1b"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="162-nJ-3zO"/>
+                                <exclude reference="P7q-Ft-UFL"/>
+                                <exclude reference="5y4-Dh-793"/>
+                                <exclude reference="8NS-xq-yhy"/>
+                                <exclude reference="GDi-Sj-Q5t"/>
+                                <exclude reference="b8w-3G-zS8"/>
+                                <exclude reference="fG3-Z8-I80"/>
+                                <exclude reference="oOT-Bn-T8n"/>
+                                <exclude reference="pnz-fz-TlQ"/>
+                                <exclude reference="q6z-tB-kZ8"/>
+                                <exclude reference="umf-jt-z1b"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Presentation" id="q8G-K3-etc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gG2-qv-g7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="722" y="-990"/>
+            <point key="canvasLocation" x="722" y="-999"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -84,6 +146,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="PLD_Logo_black" width="1943" height="285"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
