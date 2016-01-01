@@ -10,6 +10,9 @@ import UIKit
 
 class ThirdViewController: UIViewController {
     
+    //@IBOutlet weak var webViewYoutubeIntro: UIWebView!
+
+    
     var statusBarColorSwitch : Int = 0
     
     
@@ -21,7 +24,7 @@ class ThirdViewController: UIViewController {
             UIApplication.sharedApplication().statusBarStyle = .LightContent;
             statusBarColorSwitch = 1;
         }
-        
+               
     }
     
     override func didReceiveMemoryWarning() {

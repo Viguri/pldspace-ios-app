@@ -11,7 +11,7 @@
         <!--Arion 1-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="PLDSpace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="SecondViewController" customModule="PLDSpace" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -30,7 +30,7 @@
         <!--Arion 2-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="PLDSpace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="ThirdViewController" customModule="PLDSpace" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -49,7 +49,7 @@
         <!--Presentation-->
         <scene sceneID="RYI-OR-zoG">
             <objects>
-                <viewController id="O8o-rK-AZ4" userLabel="Presentation" sceneMemberID="viewController">
+                <viewController id="O8o-rK-AZ4" userLabel="Presentation" customClass="FirstViewController" customModule="PLDSpace" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ADo-Os-egG"/>
                         <viewControllerLayoutGuide type="bottom" id="RPq-iV-S4c"/>
@@ -73,7 +73,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xot-Rb-4DF">
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xot-Rb-4DF" userLabel="webViewYoutubeIntro">
                                 <rect key="frame" x="180" y="71" width="240" height="151"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
@@ -119,6 +119,9 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Presentation" id="q8G-K3-etc"/>
+                    <connections>
+                        <outlet property="webViewYoutubeIntro" destination="xot-Rb-4DF" id="nH1-oW-4Cp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gG2-qv-g7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

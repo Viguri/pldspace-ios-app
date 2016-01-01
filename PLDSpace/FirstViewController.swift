@@ -10,6 +10,8 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
+    @IBOutlet weak var webViewYoutubeIntro: UIWebView!
+    
     var statusBarColorSwitch : Int = 0
 
 
@@ -21,6 +23,13 @@ class FirstViewController: UIViewController {
             UIApplication.sharedApplication().statusBarStyle = .LightContent;
             statusBarColorSwitch = 1;
         }
+        
+        
+        let myURL : NSURL = NSURL(string: "https://www.youtube.com/embed/b2X7E8Ly-Cs")!;
+        let myURLRequest : NSURLRequest = NSURLRequest(URL: myURL);
+        self.webViewYoutubeIntro.loadRequest(myURLRequest)
+        
+
         
     }
 
