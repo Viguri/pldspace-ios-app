@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0723F3391C3625860046AE50 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723F3381C3625860046AE50 /* ThirdViewController.swift */; };
+		0723F33B1C36275A0046AE50 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0723F33A1C36275A0046AE50 /* MapKit.framework */; };
 		07FF1AF11C361B2C00433380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF1AF01C361B2C00433380 /* AppDelegate.swift */; };
 		07FF1AF31C361B2C00433380 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF1AF21C361B2C00433380 /* FirstViewController.swift */; };
 		07FF1AF51C361B2C00433380 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF1AF41C361B2C00433380 /* SecondViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0723F3381C3625860046AE50 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		0723F33A1C36275A0046AE50 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		07FF1AED1C361B2C00433380 /* PLDSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLDSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FF1AF01C361B2C00433380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07FF1AF21C361B2C00433380 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0723F33B1C36275A0046AE50 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +84,7 @@
 		07FF1AE41C361B2C00433380 = {
 			isa = PBXGroup;
 			children = (
+				0723F33A1C36275A0046AE50 /* MapKit.framework */,
 				07FF1AEF1C361B2C00433380 /* PLDSpace */,
 				07FF1B061C361B2C00433380 /* PLDSpaceTests */,
 				07FF1B111C361B2C00433380 /* PLDSpaceUITests */,
@@ -106,6 +112,7 @@
 				07FF1AF61C361B2C00433380 /* Main.storyboard */,
 				07FF1AFB1C361B2C00433380 /* LaunchScreen.storyboard */,
 				07FF1AFE1C361B2C00433380 /* Info.plist */,
+				0723F3381C3625860046AE50 /* ThirdViewController.swift */,
 			);
 			path = PLDSpace;
 			sourceTree = "<group>";
@@ -197,6 +204,14 @@
 					07FF1AEC1C361B2C00433380 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = P7A78BKYAY;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					07FF1B021C361B2C00433380 = {
 						CreatedOnToolsVersion = 7.2;
@@ -264,6 +279,7 @@
 			files = (
 				07FF1AF51C361B2C00433380 /* SecondViewController.swift in Sources */,
 				07FF1AF11C361B2C00433380 /* AppDelegate.swift in Sources */,
+				0723F3391C3625860046AE50 /* ThirdViewController.swift in Sources */,
 				07FF1AF31C361B2C00433380 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
