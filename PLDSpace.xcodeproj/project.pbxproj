@@ -11,10 +11,10 @@
 		07FF1AF31C361B2C00433380 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF1AF21C361B2C00433380 /* FirstViewController.swift */; };
 		07FF1AF51C361B2C00433380 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF1AF41C361B2C00433380 /* SecondViewController.swift */; };
 		07FF1AF81C361B2C00433380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FF1AF61C361B2C00433380 /* Main.storyboard */; };
-		07FF1AFA1C361B2C00433380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FF1AF91C361B2C00433380 /* Assets.xcassets */; };
 		07FF1AFD1C361B2C00433380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FF1AFB1C361B2C00433380 /* LaunchScreen.storyboard */; };
 		07FF1B081C361B2C00433380 /* PLDSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF1B071C361B2C00433380 /* PLDSpaceTests.swift */; };
 		07FF1B131C361B2C00433380 /* PLDSpaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF1B121C361B2C00433380 /* PLDSpaceUITests.swift */; };
+		07FF1B211C36200A00433380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FF1B201C36200A00433380 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		07FF1AF21C361B2C00433380 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		07FF1AF41C361B2C00433380 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		07FF1AF71C361B2C00433380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		07FF1AF91C361B2C00433380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07FF1AFC1C361B2C00433380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07FF1AFE1C361B2C00433380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FF1B031C361B2C00433380 /* PLDSpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PLDSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +48,7 @@
 		07FF1B0E1C361B2C00433380 /* PLDSpaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PLDSpaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FF1B121C361B2C00433380 /* PLDSpaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLDSpaceUITests.swift; sourceTree = "<group>"; };
 		07FF1B141C361B2C00433380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07FF1B201C36200A00433380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +99,11 @@
 		07FF1AEF1C361B2C00433380 /* PLDSpace */ = {
 			isa = PBXGroup;
 			children = (
+				07FF1B201C36200A00433380 /* Assets.xcassets */,
 				07FF1AF01C361B2C00433380 /* AppDelegate.swift */,
 				07FF1AF21C361B2C00433380 /* FirstViewController.swift */,
 				07FF1AF41C361B2C00433380 /* SecondViewController.swift */,
 				07FF1AF61C361B2C00433380 /* Main.storyboard */,
-				07FF1AF91C361B2C00433380 /* Assets.xcassets */,
 				07FF1AFB1C361B2C00433380 /* LaunchScreen.storyboard */,
 				07FF1AFE1C361B2C00433380 /* Info.plist */,
 			);
@@ -236,7 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07FF1AFD1C361B2C00433380 /* LaunchScreen.storyboard in Resources */,
-				07FF1AFA1C361B2C00433380 /* Assets.xcassets in Resources */,
+				07FF1B211C36200A00433380 /* Assets.xcassets in Resources */,
 				07FF1AF81C361B2C00433380 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +491,7 @@
 				07FF1B191C361B2C00433380 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07FF1B1A1C361B2C00433380 /* Build configuration list for PBXNativeTarget "PLDSpaceTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +500,7 @@
 				07FF1B1C1C361B2C00433380 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07FF1B1D1C361B2C00433380 /* Build configuration list for PBXNativeTarget "PLDSpaceUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +509,7 @@
 				07FF1B1F1C361B2C00433380 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
