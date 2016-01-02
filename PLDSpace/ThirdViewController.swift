@@ -13,18 +13,17 @@ class ThirdViewController: UIViewController {
     //@IBOutlet weak var webViewYoutubeIntro: UIWebView!
 
     
-    var statusBarColorSwitch : Int = 0
+    /*var statusBarColorSwitch : Int = 0*/
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //cambiamos el color del statusbar para que se vea con el fondo negro
-        if statusBarColorSwitch == 0 {
-            UIApplication.sharedApplication().statusBarStyle = .LightContent;
-            statusBarColorSwitch = 1;
-        }
-               
+        /*if statusBarColorSwitch == 0 {
+        UIApplication.sharedApplication().statusBarStyle = .LightContent;
+        statusBarColorSwitch = 1;
+        }*/
     }
     
     override func didReceiveMemoryWarning() {

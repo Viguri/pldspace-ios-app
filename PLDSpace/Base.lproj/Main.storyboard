@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -19,6 +18,11 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGY-SM-Uts">
+                                <rect key="frame" x="188" y="14" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Arion 1" image="first" selectedImage="first" id="acW-dT-cKf"/>
@@ -46,6 +50,55 @@
             </objects>
             <point key="canvasLocation" x="722" y="416"/>
         </scene>
+        <!--Social-->
+        <scene sceneID="pf3-GH-joH">
+            <objects>
+                <viewController id="rby-DD-p3b" userLabel="Social" customClass="FourthViewController" customModule="PLDSpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MxF-CW-9i9"/>
+                        <viewControllerLayoutGuide type="bottom" id="coW-5x-ZHJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gPP-wY-Q6l" userLabel="FourthViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzq-ew-kDd">
+                                <rect key="frame" x="191" y="129" width="219" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="219" id="eJp-DM-tbR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="fKT-el-iWG"/>
+                                </constraints>
+                                <state key="normal" title="Share with Facebook"/>
+                                <connections>
+                                    <action selector="shareFacebookTapped:" destination="rby-DD-p3b" eventType="touchUpInside" id="bCT-HJ-6gm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5If-7i-nV7">
+                                <rect key="frame" x="244" y="64" width="113" height="30"/>
+                                <state key="normal" title="Share on Twitter"/>
+                                <connections>
+                                    <action selector="shareTwitterTapped:" destination="rby-DD-p3b" eventType="touchUpInside" id="VLa-LY-6p2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.49645390070921985" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5If-7i-nV7" firstAttribute="centerY" secondItem="gPP-wY-Q6l" secondAttribute="centerY" constant="-221" id="3vo-Zr-Vz9"/>
+                            <constraint firstItem="5If-7i-nV7" firstAttribute="centerX" secondItem="gPP-wY-Q6l" secondAttribute="centerX" id="5r8-TG-soN"/>
+                            <constraint firstItem="fzq-ew-kDd" firstAttribute="centerX" secondItem="gPP-wY-Q6l" secondAttribute="centerX" id="Ums-nH-b1g"/>
+                            <constraint firstItem="fzq-ew-kDd" firstAttribute="centerY" secondItem="gPP-wY-Q6l" secondAttribute="centerY" constant="-156" id="sM2-Up-dYH"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Social" image="first" id="x0b-NY-DGp"/>
+                    <connections>
+                        <outlet property="shareFacebookBTN" destination="fzq-ew-kDd" id="zix-n3-yzR"/>
+                        <outlet property="shareTwitterBTN" destination="5If-7i-nV7" id="cAE-EG-Ada"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpN-cm-i5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="1104"/>
+        </scene>
         <!--Presentation-->
         <scene sceneID="RYI-OR-zoG">
             <objects>
@@ -59,41 +112,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PLD_Logo_black" translatesAutoresizingMaskIntoConstraints="NO" id="ODp-ur-93U">
-                                <rect key="frame" x="150" y="30" width="300" height="60"/>
+                                <rect key="frame" x="50" y="30" width="500" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="c0N-HX-U1I"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="c0N-HX-U1I"/>
+                                    <constraint firstAttribute="width" secondItem="ODp-ur-93U" secondAttribute="height" multiplier="104:11" id="eh0-44-ckS"/>
                                     <constraint firstAttribute="width" secondItem="ODp-ur-93U" secondAttribute="height" multiplier="240:43" id="lMw-qn-ZZp"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="nKK-uu-2Q1"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="65" id="nKK-uu-2Q1"/>
                                     <constraint firstAttribute="width" secondItem="ODp-ur-93U" secondAttribute="height" multiplier="240:43" id="nsO-MO-B1Z"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="eh0-44-ckS"/>
                                         <exclude reference="lMw-qn-ZZp"/>
                                         <exclude reference="nsO-MO-B1Z"/>
                                     </mask>
                                 </variation>
                             </imageView>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xot-Rb-4DF" userLabel="webViewYoutubeIntro">
-                                <rect key="frame" x="40" y="194" width="520" height="283"/>
+                                <rect key="frame" x="190" y="80" width="220" height="165"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="xot-Rb-4DF" secondAttribute="height" multiplier="240:151" id="3Up-jw-Pny"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="HUC-5t-xGe"/>
-                                    <constraint firstAttribute="width" secondItem="xot-Rb-4DF" secondAttribute="height" multiplier="520:283" id="y8W-h1-JqV"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="HUC-5t-xGe"/>
+                                    <constraint firstAttribute="width" secondItem="xot-Rb-4DF" secondAttribute="height" multiplier="4:3" id="y8W-h1-JqV"/>
+                                </constraints>
+                            </webView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PLD_iOS_white" translatesAutoresizingMaskIntoConstraints="NO" id="DyJ-Dr-VUW">
+                                <rect key="frame" x="221" y="446" width="150" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="A9C-yC-bsi"/>
+                                    <constraint firstAttribute="width" secondItem="DyJ-Dr-VUW" secondAttribute="height" multiplier="4:3" constant="36.333333333333343" id="BS1-be-abw"/>
+                                    <constraint firstAttribute="width" secondItem="DyJ-Dr-VUW" secondAttribute="height" multiplier="224:141" id="INO-OK-FGd"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="128" id="kxW-lQ-219"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="3Up-jw-Pny"/>
+                                        <exclude reference="INO-OK-FGd"/>
+                                        <exclude reference="kxW-lQ-219"/>
                                     </mask>
                                 </variation>
-                            </webView>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" layoutMarginsFollowReadableWidth="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="jP6-O4-Reu" userLabel="PLD_presentation1">
-                                <rect key="frame" x="20" y="487" width="560" height="56"/>
+                                <rect key="frame" x="38" y="250" width="527" height="183"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="Ynd-BW-6Cs"/>
                                 </constraints>
                                 <string key="text">PLD Space is a european startup that is developing space technologies to provide suborbital and orbital commercial launch services, dedicated to small payloads and nanosatellites.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -103,35 +167,53 @@
                                 </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.49288009751773049" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48999999999999999" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="xot-Rb-4DF" firstAttribute="centerXWithinMargins" secondItem="SOv-x5-we5" secondAttribute="centerXWithinMargins" id="0ja-UX-Xwg"/>
                             <constraint firstItem="ODp-ur-93U" firstAttribute="centerY" secondItem="SOv-x5-we5" secondAttribute="centerY" constant="-310" id="162-nJ-3zO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xot-Rb-4DF" secondAttribute="trailing" constant="20" id="4Sc-3U-rpi"/>
-                            <constraint firstItem="xot-Rb-4DF" firstAttribute="centerY" secondItem="SOv-x5-we5" secondAttribute="centerY" constant="-153.5" id="5Yd-gk-V7p"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="xot-Rb-4DF" secondAttribute="trailing" constant="20" id="4Sc-3U-rpi"/>
+                            <constraint firstItem="xot-Rb-4DF" firstAttribute="centerY" secondItem="SOv-x5-we5" secondAttribute="centerY" constant="-137.5" id="5Yd-gk-V7p"/>
                             <constraint firstItem="xot-Rb-4DF" firstAttribute="top" secondItem="ODp-ur-93U" secondAttribute="bottom" constant="10" id="5y4-Dh-793"/>
                             <constraint firstItem="xot-Rb-4DF" firstAttribute="leading" secondItem="SOv-x5-we5" secondAttribute="leadingMargin" constant="10" id="8NS-xq-yhy"/>
-                            <constraint firstItem="jP6-O4-Reu" firstAttribute="centerX" secondItem="SOv-x5-we5" secondAttribute="centerX" id="FcU-JB-Krg"/>
+                            <constraint firstItem="DyJ-Dr-VUW" firstAttribute="top" relation="lessThanOrEqual" secondItem="jP6-O4-Reu" secondAttribute="bottom" constant="5" id="C6f-ex-IRr"/>
+                            <constraint firstItem="jP6-O4-Reu" firstAttribute="top" secondItem="xot-Rb-4DF" secondAttribute="bottom" constant="5" id="Ci1-bF-SLE"/>
+                            <constraint firstItem="RPq-iV-S4c" firstAttribute="top" secondItem="DyJ-Dr-VUW" secondAttribute="bottom" constant="10" id="ECy-58-m3a"/>
+                            <constraint firstItem="jP6-O4-Reu" firstAttribute="centerX" secondItem="SOv-x5-we5" secondAttribute="centerX" constant="1" id="FcU-JB-Krg"/>
                             <constraint firstItem="xot-Rb-4DF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SOv-x5-we5" secondAttribute="topMargin" constant="5" id="FlC-ty-vbe"/>
                             <constraint firstItem="xot-Rb-4DF" firstAttribute="centerX" secondItem="SOv-x5-we5" secondAttribute="centerX" id="GDi-Sj-Q5t"/>
+                            <constraint firstItem="RPq-iV-S4c" firstAttribute="top" secondItem="DyJ-Dr-VUW" secondAttribute="bottom" constant="20" id="KmS-s2-3pM"/>
+                            <constraint firstItem="jP6-O4-Reu" firstAttribute="centerY" secondItem="SOv-x5-we5" secondAttribute="centerY" constant="41.5" id="NPU-8K-kOA"/>
+                            <constraint firstItem="DyJ-Dr-VUW" firstAttribute="top" secondItem="jP6-O4-Reu" secondAttribute="bottom" constant="50" id="P6O-bW-V7W"/>
                             <constraint firstItem="ODp-ur-93U" firstAttribute="centerY" secondItem="SOv-x5-we5" secondAttribute="centerY" constant="-258.5" id="P7q-Ft-UFL"/>
-                            <constraint firstAttribute="trailing" secondItem="jP6-O4-Reu" secondAttribute="trailing" constant="20" id="QxI-6T-UxA"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jP6-O4-Reu" secondAttribute="trailing" constant="20" id="QxI-6T-UxA"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="ODp-ur-93U" secondAttribute="trailing" constant="30" id="U3Z-2l-g9h"/>
                             <constraint firstItem="RPq-iV-S4c" firstAttribute="top" secondItem="jP6-O4-Reu" secondAttribute="bottom" constant="215.5" id="Wed-6u-HdY"/>
-                            <constraint firstItem="xot-Rb-4DF" firstAttribute="leading" secondItem="SOv-x5-we5" secondAttribute="leadingMargin" constant="20" id="YIj-2U-C8K"/>
+                            <constraint firstItem="xot-Rb-4DF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SOv-x5-we5" secondAttribute="leadingMargin" constant="20" id="YIj-2U-C8K"/>
+                            <constraint firstItem="DyJ-Dr-VUW" firstAttribute="centerX" secondItem="SOv-x5-we5" secondAttribute="centerX" constant="-4" id="ZCD-F0-Lxa"/>
                             <constraint firstItem="ODp-ur-93U" firstAttribute="centerX" secondItem="SOv-x5-we5" secondAttribute="centerX" id="ZgU-4Y-XMb"/>
+                            <constraint firstItem="RPq-iV-S4c" firstAttribute="top" relation="greaterThanOrEqual" secondItem="DyJ-Dr-VUW" secondAttribute="bottom" priority="250" constant="20" id="aUq-wf-vTv"/>
                             <constraint firstItem="xot-Rb-4DF" firstAttribute="top" secondItem="ODp-ur-93U" secondAttribute="bottom" multiplier="4:3" constant="10" id="b8w-3G-zS8"/>
                             <constraint firstItem="xot-Rb-4DF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ODp-ur-93U" secondAttribute="bottom" constant="10" id="f8D-Vf-aFk"/>
                             <constraint firstItem="xot-Rb-4DF" firstAttribute="centerX" secondItem="SOv-x5-we5" secondAttribute="centerX" id="fG3-Z8-I80"/>
-                            <constraint firstItem="RPq-iV-S4c" firstAttribute="top" secondItem="jP6-O4-Reu" secondAttribute="bottom" constant="8" symbolic="YES" id="k9z-7v-knj"/>
+                            <constraint firstItem="DyJ-Dr-VUW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jP6-O4-Reu" secondAttribute="bottom" constant="5" id="kOL-fw-k6u"/>
                             <constraint firstItem="ODp-ur-93U" firstAttribute="top" secondItem="SOv-x5-we5" secondAttribute="topMargin" constant="30" id="l00-sc-hio"/>
-                            <constraint firstItem="jP6-O4-Reu" firstAttribute="leading" secondItem="SOv-x5-we5" secondAttribute="leading" constant="20" id="mQC-FF-zVE"/>
+                            <constraint firstItem="jP6-O4-Reu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SOv-x5-we5" secondAttribute="leading" constant="20" id="mQC-FF-zVE"/>
+                            <constraint firstAttribute="bottomMargin" relation="lessThanOrEqual" secondItem="DyJ-Dr-VUW" secondAttribute="bottom" constant="16" id="nJq-m2-Igv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xot-Rb-4DF" secondAttribute="trailing" multiplier="4:3" constant="10" id="oOT-Bn-T8n"/>
-                            <constraint firstItem="jP6-O4-Reu" firstAttribute="top" secondItem="xot-Rb-4DF" secondAttribute="bottom" constant="10" id="ogv-n9-vSu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xot-Rb-4DF" secondAttribute="trailing" constant="160" id="pnz-fz-TlQ"/>
                             <constraint firstAttribute="bottomMargin" secondItem="xot-Rb-4DF" secondAttribute="bottom" constant="395" id="q6z-tB-kZ8"/>
+                            <constraint firstItem="jP6-O4-Reu" firstAttribute="top" relation="lessThanOrEqual" secondItem="xot-Rb-4DF" secondAttribute="bottom" priority="250" constant="65" id="sdb-WV-gzd"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="xot-Rb-4DF" secondAttribute="trailing" constant="20" id="skt-N3-Xfc"/>
+                            <constraint firstItem="ODp-ur-93U" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SOv-x5-we5" secondAttribute="leadingMargin" constant="30" id="tkV-9G-erw"/>
+                            <constraint firstItem="DyJ-Dr-VUW" firstAttribute="top" secondItem="xot-Rb-4DF" secondAttribute="bottom" constant="10" id="uGp-l5-oea"/>
                             <constraint firstItem="xot-Rb-4DF" firstAttribute="leading" secondItem="SOv-x5-we5" secondAttribute="leadingMargin" constant="160" id="umf-jt-z1b"/>
+                            <constraint firstItem="DyJ-Dr-VUW" firstAttribute="centerY" relation="greaterThanOrEqual" secondItem="SOv-x5-we5" secondAttribute="centerY" constant="150" id="v1l-Iy-LLh"/>
+                            <constraint firstItem="jP6-O4-Reu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xot-Rb-4DF" secondAttribute="bottom" constant="10" id="yyl-Za-Ua7"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="162-nJ-3zO"/>
+                                <exclude reference="P7q-Ft-UFL"/>
                                 <exclude reference="5y4-Dh-793"/>
                                 <exclude reference="8NS-xq-yhy"/>
                                 <exclude reference="FlC-ty-vbe"/>
@@ -141,15 +223,25 @@
                                 <exclude reference="oOT-Bn-T8n"/>
                                 <exclude reference="pnz-fz-TlQ"/>
                                 <exclude reference="q6z-tB-kZ8"/>
+                                <exclude reference="skt-N3-Xfc"/>
                                 <exclude reference="umf-jt-z1b"/>
-                                <exclude reference="162-nJ-3zO"/>
-                                <exclude reference="P7q-Ft-UFL"/>
+                                <exclude reference="sdb-WV-gzd"/>
+                                <exclude reference="yyl-Za-Ua7"/>
+                                <exclude reference="C6f-ex-IRr"/>
+                                <exclude reference="P6O-bW-V7W"/>
+                                <exclude reference="kOL-fw-k6u"/>
+                                <exclude reference="nJq-m2-Igv"/>
+                                <exclude reference="uGp-l5-oea"/>
+                                <exclude reference="v1l-Iy-LLh"/>
+                                <exclude reference="ECy-58-m3a"/>
                                 <exclude reference="Wed-6u-HdY"/>
+                                <exclude reference="aUq-wf-vTv"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Presentation" id="q8G-K3-etc"/>
+                    <tabBarItem key="tabBarItem" title="Presentation" image="second" id="q8G-K3-etc"/>
                     <connections>
+                        <outlet property="PLD_logo" destination="DyJ-Dr-VUW" id="h2C-zv-0V7"/>
                         <outlet property="webViewYoutubeIntro" destination="xot-Rb-4DF" id="nH1-oW-4Cp"/>
                     </connections>
                 </viewController>
@@ -171,6 +263,7 @@
                         <segue destination="O8o-rK-AZ4" kind="relationship" relationship="viewControllers" id="2l0-z3-Gmv"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="rby-DD-p3b" kind="relationship" relationship="viewControllers" id="0ai-TS-TJm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -180,6 +273,7 @@
     </scenes>
     <resources>
         <image name="PLD_Logo_black" width="1943" height="285"/>
+        <image name="PLD_iOS_white" width="1130" height="707"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
