@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  ThirdViewController.swift
 //  PLDSpace
 //
 //  Created by Manuel Emilio Rodríguez de Viguri Fernández on 1/1/16.
@@ -8,8 +8,11 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class Arion2VC: UIViewController {
+    
+    //@IBOutlet weak var webViewYoutubeIntro: UIWebView!
 
+    
     /*var statusBarColorSwitch : Int = 0*/
     
     
@@ -21,7 +24,6 @@ class SecondViewController: UIViewController {
         UIApplication.sharedApplication().statusBarStyle = .LightContent;
         statusBarColorSwitch = 1;
         }*/
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,6 +40,4 @@ class SecondViewController: UIViewController {
         }
         
     }*/
-
 }
-

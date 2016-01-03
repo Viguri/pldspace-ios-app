@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  SecondViewController.swift
 //  PLDSpace
 //
 //  Created by Manuel Emilio Rodríguez de Viguri Fernández on 1/1/16.
@@ -8,22 +8,15 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
-    
-    //@IBOutlet weak var webViewYoutubeIntro: UIWebView!
+class Arion1VC: UIViewController {
 
-    
     /*var statusBarColorSwitch : Int = 0*/
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //cambiamos el color del statusbar para que se vea con el fondo negro
-        /*if statusBarColorSwitch == 0 {
-        UIApplication.sharedApplication().statusBarStyle = .LightContent;
-        statusBarColorSwitch = 1;
-        }*/
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "CHTakT5UYAIUzVx.jpg")!)
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,4 +33,6 @@ class ThirdViewController: UIViewController {
         }
         
     }*/
+
 }
+

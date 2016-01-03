@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0723F3391C3625860046AE50 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723F3381C3625860046AE50 /* ThirdViewController.swift */; };
+		0723F3391C3625860046AE50 /* Arion2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723F3381C3625860046AE50 /* Arion2VC.swift */; };
 		0723F33B1C36275A0046AE50 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0723F33A1C36275A0046AE50 /* MapKit.framework */; };
-		0723F33D1C362F960046AE50 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0723F33C1C362F960046AE50 /* Default-568h@2x.png */; };
-		0723F34A1C372B510046AE50 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723F3491C372B510046AE50 /* FourthViewController.swift */; };
+		0723F34A1C372B510046AE50 /* SocialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723F3491C372B510046AE50 /* SocialVC.swift */; };
+		079FD03D1C382FAC0038F23F /* PageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FD03C1C382FAC0038F23F /* PageItemController.swift */; };
+		079FD03F1C38319F0038F23F /* SecondPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FD03E1C38319F0038F23F /* SecondPageController.swift */; };
+		079FD0411C38878A0038F23F /* Arion2SwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FD0401C3887890038F23F /* Arion2SwipeController.swift */; };
+		079FD04C1C388EF40038F23F /* ViewController0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FD04A1C388EF40038F23F /* ViewController0.swift */; };
+		079FD04D1C388EF40038F23F /* ViewController0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079FD04B1C388EF40038F23F /* ViewController0.xib */; };
+		079FD0501C388F030038F23F /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FD04E1C388F030038F23F /* ViewController1.swift */; };
+		079FD0511C388F030038F23F /* ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079FD04F1C388F030038F23F /* ViewController1.xib */; };
+		079FD0541C388F110038F23F /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FD0521C388F110038F23F /* ViewController2.swift */; };
+		079FD0551C388F110038F23F /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079FD0531C388F110038F23F /* ViewController2.xib */; };
+		079FD0581C388F230038F23F /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FD0561C388F230038F23F /* ViewController3.swift */; };
+		079FD0591C388F230038F23F /* ViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079FD0571C388F230038F23F /* ViewController3.xib */; };
 		07FF1AF11C361B2C00433380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF1AF01C361B2C00433380 /* AppDelegate.swift */; };
-		07FF1AF31C361B2C00433380 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF1AF21C361B2C00433380 /* FirstViewController.swift */; };
-		07FF1AF51C361B2C00433380 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF1AF41C361B2C00433380 /* SecondViewController.swift */; };
+		07FF1AF31C361B2C00433380 /* PresentationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF1AF21C361B2C00433380 /* PresentationVC.swift */; };
+		07FF1AF51C361B2C00433380 /* Arion1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF1AF41C361B2C00433380 /* Arion1VC.swift */; };
 		07FF1AF81C361B2C00433380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FF1AF61C361B2C00433380 /* Main.storyboard */; };
 		07FF1AFD1C361B2C00433380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FF1AFB1C361B2C00433380 /* LaunchScreen.storyboard */; };
 		07FF1B081C361B2C00433380 /* PLDSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF1B071C361B2C00433380 /* PLDSpaceTests.swift */; };
@@ -39,14 +49,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0723F3381C3625860046AE50 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		0723F3381C3625860046AE50 /* Arion2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arion2VC.swift; sourceTree = "<group>"; };
 		0723F33A1C36275A0046AE50 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		0723F33C1C362F960046AE50 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		0723F3491C372B510046AE50 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		0723F3491C372B510046AE50 /* SocialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialVC.swift; sourceTree = "<group>"; };
+		079FD03C1C382FAC0038F23F /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
+		079FD03E1C38319F0038F23F /* SecondPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPageController.swift; sourceTree = "<group>"; };
+		079FD0401C3887890038F23F /* Arion2SwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arion2SwipeController.swift; sourceTree = "<group>"; };
+		079FD04A1C388EF40038F23F /* ViewController0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController0.swift; sourceTree = "<group>"; };
+		079FD04B1C388EF40038F23F /* ViewController0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController0.xib; sourceTree = "<group>"; };
+		079FD04E1C388F030038F23F /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		079FD04F1C388F030038F23F /* ViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController1.xib; sourceTree = "<group>"; };
+		079FD0521C388F110038F23F /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		079FD0531C388F110038F23F /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
+		079FD0561C388F230038F23F /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		079FD0571C388F230038F23F /* ViewController3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController3.xib; sourceTree = "<group>"; };
 		07FF1AED1C361B2C00433380 /* PLDSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLDSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FF1AF01C361B2C00433380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07FF1AF21C361B2C00433380 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		07FF1AF41C361B2C00433380 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		07FF1AF21C361B2C00433380 /* PresentationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationVC.swift; sourceTree = "<group>"; };
+		07FF1AF41C361B2C00433380 /* Arion1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arion1VC.swift; sourceTree = "<group>"; };
 		07FF1AF71C361B2C00433380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07FF1AFC1C361B2C00433380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07FF1AFE1C361B2C00433380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,7 +108,6 @@
 		07FF1AE41C361B2C00433380 = {
 			isa = PBXGroup;
 			children = (
-				0723F33C1C362F960046AE50 /* Default-568h@2x.png */,
 				0723F33A1C36275A0046AE50 /* MapKit.framework */,
 				07FF1AEF1C361B2C00433380 /* PLDSpace */,
 				07FF1B061C361B2C00433380 /* PLDSpaceTests */,
@@ -114,11 +133,22 @@
 				07FF1AFB1C361B2C00433380 /* LaunchScreen.storyboard */,
 				07FF1AF01C361B2C00433380 /* AppDelegate.swift */,
 				07FF1AF61C361B2C00433380 /* Main.storyboard */,
-				07FF1AF21C361B2C00433380 /* FirstViewController.swift */,
-				07FF1AF41C361B2C00433380 /* SecondViewController.swift */,
-				0723F3381C3625860046AE50 /* ThirdViewController.swift */,
-				0723F3491C372B510046AE50 /* FourthViewController.swift */,
+				07FF1AF21C361B2C00433380 /* PresentationVC.swift */,
+				079FD0401C3887890038F23F /* Arion2SwipeController.swift */,
+				079FD04A1C388EF40038F23F /* ViewController0.swift */,
+				079FD04B1C388EF40038F23F /* ViewController0.xib */,
+				079FD04E1C388F030038F23F /* ViewController1.swift */,
+				079FD04F1C388F030038F23F /* ViewController1.xib */,
+				079FD0521C388F110038F23F /* ViewController2.swift */,
+				079FD0531C388F110038F23F /* ViewController2.xib */,
+				079FD0561C388F230038F23F /* ViewController3.swift */,
+				079FD0571C388F230038F23F /* ViewController3.xib */,
+				07FF1AF41C361B2C00433380 /* Arion1VC.swift */,
+				0723F3381C3625860046AE50 /* Arion2VC.swift */,
+				0723F3491C372B510046AE50 /* SocialVC.swift */,
 				07FF1AFE1C361B2C00433380 /* Info.plist */,
+				079FD03C1C382FAC0038F23F /* PageItemController.swift */,
+				079FD03E1C38319F0038F23F /* SecondPageController.swift */,
 			);
 			path = PLDSpace;
 			sourceTree = "<group>";
@@ -256,10 +286,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079FD0511C388F030038F23F /* ViewController1.xib in Resources */,
 				07FF1AFD1C361B2C00433380 /* LaunchScreen.storyboard in Resources */,
-				0723F33D1C362F960046AE50 /* Default-568h@2x.png in Resources */,
+				079FD04D1C388EF40038F23F /* ViewController0.xib in Resources */,
 				07FF1B211C36200A00433380 /* Assets.xcassets in Resources */,
 				07FF1AF81C361B2C00433380 /* Main.storyboard in Resources */,
+				079FD0591C388F230038F23F /* ViewController3.xib in Resources */,
+				079FD0551C388F110038F23F /* ViewController2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,11 +317,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FF1AF51C361B2C00433380 /* SecondViewController.swift in Sources */,
+				079FD04C1C388EF40038F23F /* ViewController0.swift in Sources */,
+				07FF1AF51C361B2C00433380 /* Arion1VC.swift in Sources */,
+				079FD0581C388F230038F23F /* ViewController3.swift in Sources */,
 				07FF1AF11C361B2C00433380 /* AppDelegate.swift in Sources */,
-				0723F3391C3625860046AE50 /* ThirdViewController.swift in Sources */,
-				07FF1AF31C361B2C00433380 /* FirstViewController.swift in Sources */,
-				0723F34A1C372B510046AE50 /* FourthViewController.swift in Sources */,
+				079FD03F1C38319F0038F23F /* SecondPageController.swift in Sources */,
+				079FD0541C388F110038F23F /* ViewController2.swift in Sources */,
+				0723F3391C3625860046AE50 /* Arion2VC.swift in Sources */,
+				07FF1AF31C361B2C00433380 /* PresentationVC.swift in Sources */,
+				079FD0501C388F030038F23F /* ViewController1.swift in Sources */,
+				0723F34A1C372B510046AE50 /* SocialVC.swift in Sources */,
+				079FD0411C38878A0038F23F /* Arion2SwipeController.swift in Sources */,
+				079FD03D1C382FAC0038F23F /* PageItemController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +452,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -421,6 +462,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

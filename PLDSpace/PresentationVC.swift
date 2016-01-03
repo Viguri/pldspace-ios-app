@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class PresentationVC: UIViewController {
 
     @IBOutlet weak var webViewYoutubeIntro: UIWebView!
     @IBOutlet weak var PLD_logo: UIImageView!
@@ -30,11 +30,14 @@ class FirstViewController: UIViewController {
         let myURLRequest : NSURLRequest = NSURLRequest(URL: myURL);
         self.webViewYoutubeIntro.loadRequest(myURLRequest)
         
-        let PLD_logo = UIImageView(frame: CGRectMake(0, 0, 100, 100))
-        PLD_logo.backgroundColor = UIColor.redColor()
-        PLD_logo.layer.cornerRadius = 8.0
-        PLD_logo.clipsToBounds = true
+        self.roundingUIView(self.PLD_logo, cornerRadiusParam: 10)
+        //self.roundingUIView(self.myUIViewBackground, cornerRadiusParam: 20)
         
+    }
+    
+    private func roundingUIView(let aView: UIView!, let cornerRadiusParam: CGFloat!) {
+        aView.clipsToBounds = true
+        aView.layer.cornerRadius = cornerRadiusParam
     }
 
     override func didReceiveMemoryWarning() {

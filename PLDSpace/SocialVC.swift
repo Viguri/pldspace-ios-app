@@ -9,7 +9,7 @@
 import UIKit
 import Social
 
-class FourthViewController: UIViewController {
+class SocialVC: UIViewController {
     
     @IBOutlet weak var shareTwitterBTN: UIButton!
     @IBOutlet weak var shareFacebookBTN: UIButton!
